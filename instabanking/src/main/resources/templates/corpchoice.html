@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CORP Login Page</title>
+<style>
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+td {
+        background-color: white;
+}
+th {
+        font-size: 20px;
+         width: 100px;
+    height: 50px;
+    background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation: example 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation: example 4s infinite;
+}
+tr
+{
+	align: justify;
+}
+body {
+        background-image: url("/images/jadu.jpg");
+		background-size: 1500px;
+		height: 150%;
+} 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 7px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+<title>Discover Financial</title>
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <link rel="stylesheet" href="/css/bootstrap.min.css"></link>
+</head>
+<body>
+<br/>
+<div class="container">         
+  <center><img src="/images/discover.png" class="img-rounded" alt="discover" width="600" height="105"></img></center> 
+</div>
+<center><h1> Welcome to Discover Financial Services </h1></center><br/>
+<center><h2> Select one of the choices by clicking on the image </h2></center>
+
+<br/>
+<input type="hidden" value="${message}" name="abc"/>
+<table style="width:100%">
+  <tr>
+	<th style="border:3px dashed black;" align="center">ADD NEW USER</th>
+	<th style="border:3px dashed black;" align="center">VERIFY USER DOCUMENTS</th>
+	<th style="border:3px dashed black;" align="center">ADD A NEW OFFER</th>
+	</tr>
+	<tr>
+	<td  style="border:3px dashed black;">  
+    <a href="corpusermaint.html"><center><input type="image" src="/images/adduserimage.png" height="40%"/></center></a>
+  </td>
+    <td  style="border:3px dashed black;"> 
+    <a href="corpuserselect.html"><center><input type="image" src="/images/viewdocumenstimage.jpg" height="40%" align="center"/></center></a>
+  </td>
+    <td  style="border:3px dashed black;"> 
+  <a href="corpofferupdate.html"><center><input type="image" src="/images/addoffersimage.png" height="40%"/></center></a>
+  </td>
+	</tr>
+ </table>
+<footer>
+<center><h2 style="background-color:rgb(28, 28, 28);color:white">
+                         INSTA BANKING by Walking Coders
+</h2></center>
+</footer>
+</body>
+</html>

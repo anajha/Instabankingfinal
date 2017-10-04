@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Discover Financial Services </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+ <style> 
+body {
+        
+         background-image: url("/images/jadu.jpg");
+		 background-size: 1500px;
+		 height: 100%;
+}  
+
+footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 50px;
+		}
+
+</style>
+</head>
+
+
+<br/>
+<body>
+<form method="post" enctype="multipart/form-data">    
+<div class="container">
+<center><img src="/images/discover.png" class="img-rounded" alt="discover" width="600" height="105"/></center>   
+<br/>    
+<h1><center> Welcome to Discover Financial Services </center></h1> 
+  <table class="table table-bordered" style="border:3px dashed black;">
+<thead>
+
+<tr style="border:3px dashed black;">
+	<th style="border:3px dashed black;"><center>Document name</center></th>
+	<th style="border:3px dashed black;"><center>Status</center></th>
+	<th style="border:3px dashed black;"><center>Uploaded Date</center></th>
+	<th style="border:3px dashed black;"><center>Expiry Date</center></th>
+	<th style="border:3px dashed black;"><center>Set Expiry Date</center></th>
+	<th style="border:3px dashed black;"><center>Action</center></th>
+</tr>
+</thead>
+<tbody>
+	<tr th:each="tran1,iterationStatus : ${aadhar}">
+	<td th:align="center" style="border:3px dashed black;"><a th:href="${tran1.d1imagename}">Aadhar</a></td>
+	<td th:text="${tran1.d1status}" align="center" style="border:3px dashed black;" >NA</td>
+	<td th:text="${tran1.d1udate}" align="center" style="border:3px dashed black;">NA</td>
+	<td th:text="${tran1.d1edate}" align="center" style="border:3px dashed black;">NA</td>
+	<td align="center" style="border:3px dashed black;"><input type="date" name="eday"></input>&nbsp;&nbsp;<input type="submit" value="SUBMIT" name="d1"></input></td>		
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d1doc" value="VERIFY" class="btn btn-primary">&nbsp;</input></td>					
+</tr>
+	<tr th:each="tran2,iterationStatus : ${pan}">
+	<td th:align="center" style="border:3px dashed black;" ><a th:href="${tran2.d2imagename}">PAN</a></td>
+	<td th:text="${tran2.d2status}" align="center" style="border:3px dashed black;" >NA</td>
+	<td th:text="${tran2.d2udate}" align="center" style="border:3px dashed black;">NA</td>
+	<td th:text="${tran2.d2edate}" align="center" style="border:3px dashed black;">NA</td>
+	<td align="center" style="border:3px dashed black;"><input type="date" name="eday"></input>&nbsp;&nbsp;<input type="submit" value="SUBMIT" name="d2"></input></td>		
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d2doc" value="VERIFY" class="btn btn-primary">&nbsp;</input></td>					
+</tr>
+	<tr th:each="tran3,iterationStatus : ${salary}">
+	<td th:align="center" style="border:3px dashed black;"><a th:href="${tran3.d3imagename}">Salary slip</a></td>
+	<td th:text="${tran3.d3status}" align="center" style="border:3px dashed black;" >NA</td>
+	<td th:text="${tran3.d3udate}" align="center" style="border:3px dashed black;">NA</td>
+	<td th:text="${tran3.d3edate}" align="center" style="border:3px dashed black;">NA</td>
+	<td align="center" style="border:3px dashed black;"><input type="date" name="eday"></input>&nbsp;&nbsp;<input type="submit" value="SUBMIT" name="d3"></input></td>		
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d3doc" value="VERIFY" class="btn btn-primary">&nbsp;</input></td>					
+</tr>
+	<tr th:each="tran4,iterationStatus : ${passport}">
+	<td th:align="center" style="border:3px dashed black;"><a th:href="${tran4.d4imagename}">Passport</a></td>
+	<td th:text="${tran4.d4status}" align="center" style="border:3px dashed black;" >NA</td>
+	<td th:text="${tran4.d4udate}" align="center" style="border:3px dashed black;">NA</td>
+	<td th:text="${tran4.d4edate}" align="center" style="border:3px dashed black;">NA</td>
+	<td align="center" style="border:3px dashed black;"><input type="date" name="eday"></input>&nbsp;&nbsp;<input type="submit" value="SUBMIT" name="d4"></input></td>		
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d4doc" value="VERIFY" class="btn btn-primary">&nbsp;</input></td>					
+</tr>
+	<tr th:each="tran5,iterationStatus : ${utility}">
+	<td th:align="center" style="border:3px dashed black;" ><a th:href="${tran5.d5imagename}">Utility Bill</a></td>
+	<td th:text="${tran5.d5status}" align="center" style="border:3px dashed black;" >NA</td>
+	<td th:text="${tran5.d5udate}" align="center" style="border:3px dashed black;">NA</td>
+	<td th:text="${tran5.d5edate}" align="center" style="border:3px dashed black;">NA</td>
+	<td align="center" style="border:3px dashed black;"><input type="date" name="eday"></input>&nbsp;&nbsp;<input type="submit" value="SUBMIT" name="d5"></input></td>		
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d5doc" value="VERIFY" class="btn btn-primary">&nbsp;</input></td>					
+</tr>
+	<tr th:each="tran6,iterationStatus : ${driving}">
+	<td th:align="center" style="border:3px dashed black;" ><a th:href="${tran6.d6imagename}">Driving License</a></td>
+	<td th:text="${tran6.d6status}" align="center" style="border:3px dashed black;" >NA</td>
+	<td th:text="${tran6.d6udate}" align="center" style="border:3px dashed black;">NA</td>
+	<td th:text="${tran6.d6edate}" align="center" style="border:3px dashed black;">NA</td>
+	<td align="center" style="border:3px dashed black;"><input type="date" name="eday"></input>&nbsp;&nbsp;<input type="submit" value="SUBMIT" name="d6"></input></td>		
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d6doc" value="VERIFY" class="btn btn-primary">&nbsp;</input></td>					
+</tr>
+</tbody>
+</table>
+<input type="hidden" name="pan" th:value="${messagepan}"/>
+<center><h1 th:text="${message1}"></h1></center>
+</div>
+  </form>
+  <footer>
+<center><h2 style="background-color:rgb(28, 28, 28);color:white">
+                         INSTA BANKING by Walking Coders
+</h2></center>
+</footer>
+  </body>
+</html>
+
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+<style>
+body {
+        background-image: url("/images/jadu.jpg");
+		background-size: 1500px;
+		`height: 100%;
+} 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+</style>
+<title>Discover Financial</title>
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <link rel="stylesheet" href="/css/bootstrap.min.css"></link>
+</head>
+<body>
+<br/>
+<div class="container">         
+  <center><img src="/images/discover.png" class="img-rounded" alt="discover" width="600" height="105"></img></center> 
+</div>
+<center><h1> Welcome to Discover Financial Services </h1></center><br/>
+<center><h2> Enter Personal User login credentials </h2></center>
+
+<br/>
+<br/>
+<center><form method="post">
+<b>PAN:</b><br/>
+<input type="text" name="pan"/>
+<br/><br/>
+<b>PASSWORD</b><br/>
+<input type="password" name="password"/>
+<br/>
+<br/>
+<center><input type="submit" value="LOGIN" class="btn btn-primary"></input></center><br/>
+<center><h1 th:text="${message}"></h1></center>
+</form></center>
+<footer>
+<center><h2 style="background-color:rgb(28, 28, 28);color:white">
+                         INSTA BANKING by Walking Coders
+</h2></center>
+</footer>
+</body>
+</html>

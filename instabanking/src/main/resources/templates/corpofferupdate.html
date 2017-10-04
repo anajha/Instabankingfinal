@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Discover Financial Services </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+ <style> 
+ 
+body {
+        background-image: url("/images/jadu.jpg");
+		background-size: 1500px;
+		`height: 100%;
+} 
+footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 50px;
+		}
+
+
+</style>
+</head>
+
+
+<br/>
+<body>
+
+<form method="post" enctype="multipart/form-data">    
+<div class="container">
+<center><img src="/images/discover.png" class="img-rounded" alt="discover" width="600" height="105"/></center>   
+<br/>
+<h1><center> Welcome to Discover Financial Services </center></h1><br/>  
+  <table class="table table-bordered" style="border:3px dashed black;">
+<thead>
+
+<tr style="border:3px dashed black;">
+	<th style="border:3px dashed black;"><center>Offer name</center></th>
+	<th style="border:3px dashed black;"><center>Choose a suitable image</center></th>
+	<th style="border:3px dashed black;"><center>Aadhar required ?</center></th>
+	<th style="border:3px dashed black;"><center>PAN required ?</center></th>
+	<th style="border:3px dashed black;"><center>Salary slip required ?</center></th>
+	<th style="border:3px dashed black;"><center>Passport required ?</center></th>
+	<th style="border:3px dashed black;"><center>Utility bill required ?</center></th>
+	<th style="border:3px dashed black;"><center>Driving license required ?</center></th>
+	<th style="border:3px dashed black;"><center>Action</center></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td align="center" style=" border:3px dashed black;"><input type="text" name="offername"/></td>
+	<td align="center" style="border:3px dashed black;"><center><input type="file" name="filed1" size="10"/></center></td>
+	<td align="center" style="border:3px dashed black;"><center><input type="checkbox" name="aadhar"/></center></td>
+	<td align="center" style="border:3px dashed black;"><center><input type="checkbox" name="pan"/></center></td>
+	<td align="center" style="border:3px dashed black;"><center><input type="checkbox" name="salary"/></center></td>
+	<td align="center" style="border:3px dashed black;"><center><input type="checkbox" name="passport"/></center></td>
+	<td align="center" style="border:3px dashed black;"><center><input type="checkbox" name="utility"/></center></td>
+	<td align="center" style="border:3px dashed black;"><center><input type="checkbox" name="driving"/></center></td>
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d1" value="SUBMIT" class="btn btn-primary">&nbsp;</input></td>					
+</tr>
+
+</tbody>
+</table>
+<center><h1 th:text="${message}"></h1></center>
+</div>
+<footer>
+<center><h2 style="background-color:rgb(28, 28, 28);color:white">
+                         INSTA BANKING by Walking Coders
+</h2></center>
+</footer>
+
+  </form>
+  </body>
+</html>
+
+
+

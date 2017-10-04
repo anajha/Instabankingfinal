@@ -1,0 +1,130 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="/css/font-awesome.min.css" rel="stylesheet"/>
+<style>
+body {
+        background-image: url("/images/jadu.jpg");
+		background-size: 1500px;
+		height: 100%;
+} 
+th {
+        background-color: white;
+}
+ label {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+ .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 1px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+</head>
+<body>
+<br/>
+<div class="container">         
+  <center><img src="/images/discover.png" class="img-rounded" alt="discover" width="600" height="105"></img></center> 
+</div>
+<center><h1> Welcome to Discover Financial Services </h1></center>
+<center><h1><b> Banking Services </b></h1></center>
+<br/>
+<table>
+  <tr>
+    <th style="border:3px dashed black;"> 
+    <img src="/images/homeloan.jpeg" alt="Trolltunga Norway" ></img>
+	
+  </th>
+  
+    <th style="border:3px dashed black;"> 
+    <img th:src="${message1}" alt="Trolltunga Norway"></img>
+  </th>
+  
+    <th style="border:3px dashed black;"> 
+    <img src="/images/rsz_dis-student-loan.png" alt="Trolltunga Norway"></img>
+  </th>
+  
+  </tr>
+  <tr>
+	<td style="border:3px dashed black;">
+		<center><h2 style="color:red">Home Loan</h2></center>
+		<div style="color:blue">
+		<label> PAN, Driving License </label></div>
+		<br/>
+		<p><b> Note : </b> <h4>You can apply for the above offer by providing the above documents.</h4> </p>
+	</td>
+	<td style="border:3px dashed black;">
+		<center><h2 th:text="${message}" style="color:red"></h2></center>
+		<div style="color:blue">
+		<label th:text="${message2}"></label></div>
+		<br/>
+		<p><b> Note : </b><h4 th:text="${message3}"></h4> </p>
+	</td>
+	<td style="border:3px dashed black;">
+		<center><h2 style="color:red">Student Loan</h2></center>
+		<div style="color:blue">
+		<label> Aadhar, Passport </label></div>
+		<br/>
+		<p><b> Note : </b><h4>You can apply for the above offer by providing the above documents.</h4> </p>
+	</td>
+	</tr>
+</table>
+<form method="post">
+<center><p><input type="submit" name="upload" value="Upload" class="button" style="vertical-align:middle"></input></p></center>
+<input type="hidden" name="pan" th:value="${message4}"/>
+</form>
+</body>
+</html>

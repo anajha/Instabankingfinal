@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Discover Financial Services </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+ <style> 
+body {
+        background-image: url("/images/jadu.jpg");
+		background-size: 1500px;
+		`height: 100%;
+} 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+a {
+    color: #00f;
+}
+
+</style>
+</head>
+
+
+<br/>
+<body>
+<form method="post" enctype="multipart/form-data">    
+<div class="container">
+<center><img src="/images/discover.png" class="img-rounded" alt="discover" width="600" height="105"/></center>   
+<br/>     
+
+<h1><center> Welcome to Discover Financial Services </center></h1><br/>
+  <table class="table table-bordered" style="border:3px dashed black;">
+<thead>
+
+<tr style="border:3px dashed black;">
+	<th style="border:3px dashed black;"><center>File</center></th>
+	<th style="border:3px dashed black;"><center>Status</center></th>
+	<th style="border:3px dashed black;"><center>Uploaded Date</center></th>
+	<th style="border:3px dashed black;"><center>Expiry Date</center></th>
+	<th style="border:3px dashed black;"><center>Choose File</center></th>
+	<th style="border:3px dashed black;"><center>Action</center></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td align="center" style=" border:3px dashed black;"><a th:href="${message1}" color="yellow">Aadhar</a></td>
+	<td th:text="${message2}" align="center" style="border:3px dashed black;" >NA</td>
+	<td th:text="${message3}" align="center" style="border:3px dashed black;">NA</td>
+	<td th:text="${message4}" align="center" style="border:3px dashed black;">NA</td>
+	<td align="center" style="border:3px dashed black;"><center><input type="file" name="filed1" size="10"/></center></td>
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d1" value="UPLOAD" class="btn btn-primary">&nbsp;</input></td>					
+</tr>
+<tr>
+	<td align="center" style=" border:3px dashed black;"><a th:href="${message5}">PAN</a></td>
+	<td th:text="${message6}" align="center" style="border:3px dashed black;" >NA</td>
+	<td th:text="${message7}" align="center" style="border:3px dashed black;">NA</td>
+	<td th:text="${message8}" align="center" style="border:3px dashed black;">NA</td>
+	<td align="center" style="border:3px dashed black;"><center><input type="file" name="filed2" size="10"/></center></td>
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d2" value="UPLOAD" class="btn btn-primary"></input></td>					
+</tr>
+<tr>
+	<td align="center" style=" border:3px dashed black;"><a th:href="${message9}">Salary Slip</a></td>
+	<td th:text="${message10}" align="center" style="border:3px dashed black;" >NA</td>
+	<td th:text="${message11}" align="center" style="border:3px dashed black;">NA</td>
+	<td th:text="${message12}" align="center" style="border:3px dashed black;">NA</td>
+	<td align="center" style="border:3px dashed black;"><center><input type="file" name="filed3" size="10"/></center></td>
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d3" value="UPLOAD" class="btn btn-primary"></input></td>					
+</tr>
+<tr>
+	<td align="center" style=" border:3px dashed black;"><a th:href="${message13}">Passport</a></td>
+	<td th:text="${message14}" align="center" style="border:3px dashed black;" >NA</td>
+	<td th:text="${message15}" align="center" style="border:3px dashed black;">NA</td>
+	<td th:text="${message16}" align="center" style="border:3px dashed black;">NA</td>
+	<td align="center" style="border:3px dashed black;"><center><input type="file" name="filed4" size="10"/></center></td>
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d4" value="UPLOAD" class="btn btn-primary"></input></td>					
+</tr>
+<tr>
+	<td align="center" style=" border:3px dashed black;"><a th:href="${message17}">Utility Bill</a></td>
+	<td th:text="${message18}" align="center" style="border:3px dashed black;" >NA</td>
+	<td th:text="${message19}" align="center" style="border:3px dashed black;">NA</td>
+	<td th:text="${message20}" align="center" style="border:3px dashed black;">NA</td>
+	<td align="center" style="border:3px dashed black;"><center><input type="file" name="filed5" size="10"/></center></td>
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d5" value="UPLOAD" class="btn btn-primary"></input></td>					
+</tr>
+<tr>
+	<td align="center" style=" border:3px dashed black;"><a th:href="${message21}">Driving license</a></td>
+	<td th:text="${message22}" align="center" style="border:3px dashed black;" >NA</td>
+	<td th:text="${message23}" align="center" style="border:3px dashed black;">NA</td>
+	<td th:text="${message24}" align="center" style="border:3px dashed black;">NA</td>
+	<td align="center" style="border:3px dashed black;"><center><input type="file" name="filed6" size="10"/></center></td>
+	<td align="center" style="border:3px dashed black;"><input type="submit" name="d6" value="UPLOAD" class="btn btn-primary"></input></td>					
+</tr>
+</tbody>
+</table>
+<center><h1 th:text="${message25}"></h1></center>
+</div>
+</form>
+<footer>
+<center><h2 style="background-color:rgb(28, 28, 28);color:white">
+                         INSTA BANKING by Walking Coders
+</h2></center>
+</footer>
+</body>
+</html>
+
+
+
